@@ -1,7 +1,7 @@
 package Academy.Sampleproject;
 
 /**
- * Hello world!
+ * Hello world! changed
  *
  */
 public class App 
