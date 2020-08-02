@@ -15,8 +15,11 @@ public class Mobilepage
 	{
 	     this.driver = driver2;
 	}
+	
 	By sorted = By.cssSelector("select[title='Sort By']");
 	static By listname = By.cssSelector("h2[class=product-name]");
+	By productprice = By.id("product-price-1");
+	By experialink = By.cssSelector("a[title='Sony Xperia']");
 	public Select getsortedlist()
 	{
 		   Select sel = new Select(driver.findElement(sorted));
@@ -49,5 +52,14 @@ public class Mobilepage
 	       }
 
 	       return true;
+	      
+	   }
+	   public WebElement getPrice()
+       {
+       	   return driver.findElement(productprice);
+       }
+	   public WebElement getXperialink()
+	   {
+	   	   return driver.findElement(experialink);
 	   }
 }
