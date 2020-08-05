@@ -18,7 +18,7 @@ By iphoneheading=By.cssSelector(".products-grid > li:nth-child(2) > div:nth-chil
 By sony=By.xpath("/html/body/div/div/div[2]/div/div[2]/div[1]/div[3]/ul/li[1]/div/div[3]/ul/li[2]/a");
 By iphone=By.xpath("/html/body/div/div/div[2]/div/div[2]/div[1]/div[3]/ul/li[2]/div/div[3]/ul/li[2]/a");
 By comparebtn=By.cssSelector("div.block-content:nth-child(2) > div:nth-child(3) > button:nth-child(1)");
-
+By accountlink=By.xpath("//*[@id=\"top\"]/body/div/div/div[3]/div/div[4]/ul/li[1]/a");
 
     public WebElement getmobile()
 	{
@@ -48,5 +48,9 @@ By comparebtn=By.cssSelector("div.block-content:nth-child(2) > div:nth-child(3) 
 	{
 		return driver.findElement(comparebtn);
 	}
+    public WebElement getaccountlink()
+    {
+ 	   return driver.findElement(accountlink);
+    }
 
 }

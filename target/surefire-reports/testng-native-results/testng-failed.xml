@@ -3,11 +3,11 @@
 <suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="1" name="Surefire test(failed)" verbose="0">
     <classes>
-      <class name="Academy.Sampleproject.ForthTest">
+      <class name="Academy.Sampleproject.FifthTest">
         <methods>
-          <include name="compareprodct"/>
+          <include name="wishlist"/>
         </methods>
-      </class> <!-- Academy.Sampleproject.ForthTest -->
+      </class> <!-- Academy.Sampleproject.FifthTest -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->
