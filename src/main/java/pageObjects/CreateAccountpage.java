@@ -20,6 +20,21 @@ public class CreateAccountpage {
 	By confirm=By.id("confirmation");
 	By register=By.cssSelector("button.button:nth-child(2)");
 	By errormsg=By.cssSelector(".hello > strong:nth-child(1)");
+	By mail=By.id("email");
+	By pass=By.id("pass");
+	By login=By.id("send2");
+	public WebElement getEmail()
+	{
+		return driver.findElement(email);
+	}
+    public WebElement getpass()
+    {
+	return driver.findElement(pass);
+    }
+    public WebElement getlogin()
+    {
+    	return driver.findElement(login);
+    }
 	public WebElement getfirstname()
 	{
 		return driver.findElement(firstname);
@@ -32,7 +47,7 @@ public class CreateAccountpage {
 	{
 		return driver.findElement(lastname);
 	}
-	public WebElement getEmail()
+	public WebElement getMail()
 	{
 		return driver.findElement(email);
 	}
