@@ -8,8 +8,8 @@ public class SonyExperiapage {
 	public static WebDriver driver;
 	public SonyExperiapage(WebDriver driver2) 
 	{
-			// TODO Auto-generated constructor stub
-	this.driver = driver2;
+		// TODO Auto-generated constructor stub
+		this.driver = driver2;
 	}
 	
 	By secdprice = By.id("product-price-1");
@@ -18,5 +18,4 @@ public class SonyExperiapage {
 	{
 		return driver.findElement(secdprice);
 	}
-
 }

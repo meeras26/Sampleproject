@@ -41,5 +41,4 @@ public class Shoppingcartpage
 	{
 		return driver.findElement(eptymsg);
 	}
-
 }

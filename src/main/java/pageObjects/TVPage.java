@@ -10,13 +10,11 @@ public class TVPage
 	public TVPage(WebDriver driver2) 
 	{
 		// TODO Auto-generated constructor stub
-      this.driver = driver2;
-    }
+		this.driver = driver2;
+	}
 	By wishlist = By.xpath("//*[@id=\"top\"]/body/div/div/div[2]/div/div[2]/div[1]/div[2]/ul/li[1]/div/div[3]/ul/li[1]/a");
-	 public WebElement getwishlist()
-	  {
-		  return driver.findElement(wishlist);
-	  }
-
-
+	public WebElement getwishlist()
+	{
+		return driver.findElement(wishlist);
+	}
 }

@@ -27,39 +27,39 @@ public class Mobilepage
 	}
 	public static List<String> getProductNames()
 	{
-	       List<String> names = new ArrayList<>();
-	       List<WebElement> products = driver.findElements(listname);
-	       for (WebElement product : products)
-	       {
-	           names.add(product.getText());
-	           System.out.println("item :"+product.getText());
-	       }
-
-	       return names;
+	   List<String> names = new ArrayList<>();
+	   List<WebElement> products = driver.findElements(listname);
+	   for (WebElement product : products)
+	   {
+	       names.add(product.getText());
+	       System.out.println("item :"+product.getText());
+	   }
+	
+	   return names;
 	}
-	   public  boolean isListSorted(List<String> list)
-	   {
-	       String last = list.get(0);
-	       for (int i = 1; i < list.size(); i++)
-	       {
-	           String current = list.get(i);
-	           if (last.compareToIgnoreCase(current) > 0)
-	           {
-	               return false;
-	           }
-
-	           last = current;
-	       }
-
-	       return true;
-	      
-	   }
-	   public WebElement getPrice()
+   public  boolean isListSorted(List<String> list)
+   {
+       String last = list.get(0);
+       for (int i = 1; i < list.size(); i++)
        {
-       	   return driver.findElement(productprice);
+           String current = list.get(i);
+           if (last.compareToIgnoreCase(current) > 0)
+           {
+               return false;
+           }
+
+           last = current;
        }
-	   public WebElement getXperialink()
-	   {
-	   	   return driver.findElement(experialink);
-	   }
+
+       return true;
+      
+   }
+   public WebElement getPrice()
+   {
+   	   return driver.findElement(productprice);
+   }
+   public WebElement getXperialink()
+   {
+   	   return driver.findElement(experialink);
+   }
 }
