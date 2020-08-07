@@ -9,20 +9,20 @@ public class CreateAccountpage {
 	public CreateAccountpage(WebDriver driver2) 
 	{
 			// TODO Auto-generated constructor stub
-	this.driver=driver2;
+	this.driver = driver2;
 	}
 	
-	By firstname=By.id("firstname");
-	By middlename=By.id("middlename");
-	By lastname=By.id("lastname");
-	By email=By.id("email_address");
-	By password=By.id("password");
-	By confirm=By.id("confirmation");
-	By register=By.cssSelector("button.button:nth-child(2)");
-	By errormsg=By.cssSelector(".hello > strong:nth-child(1)");
-	By mail=By.id("email");
-	By pass=By.id("pass");
-	By login=By.id("send2");
+	By firstname = By.id("firstname");
+	By middlename = By.id("middlename");
+	By lastname = By.id("lastname");
+	By email = By.id("email_address");
+	By password = By.id("password");
+	By confirm = By.id("confirmation");
+	By register = By.cssSelector("button.button:nth-child(2)");
+	By errormsg = By.cssSelector(".hello > strong:nth-child(1)");
+	By mail = By.id("email");
+	By pass = By.id("pass");
+	By login = By.id("send2");
 	public WebElement getEmail()
 	{
 		return driver.findElement(email);

@@ -15,7 +15,7 @@ public class SharewishlistPage
 	By wishlistsharebtn=By.xpath("//*[@id=\"form-validate\"]/div[2]/button");
 	By email = By.id("email_address");
 	By message = By.id("message");
-	By wishmessage=By.xpath(".//*[@id='top']/body/div[1]/div/div[2]/div/div[2]/div/div[1]/ul/li/ul/li/span");
+	By wishmessage = By.xpath(".//*[@id='top']/body/div[1]/div/div[2]/div/div[2]/div/div[1]/ul/li/ul/li/span");
 	public WebElement getEmail()
 	{
 		return driver.findElement(email);

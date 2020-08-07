@@ -13,8 +13,8 @@ public class MywishlistPage
 		// TODO Auto-generated constructor stub
       this.driver=driver2;
     }
-	By wishlist=By.xpath("//*[@id=\"wishlist-view-form\"]/div/div/button[1]");
-	By addcart=By.xpath("//*[@id=\"item_46402\"]/td[5]/div/button");
+	By wishlist = By.xpath("//*[@id=\"wishlist-view-form\"]/div/div/button[1]");
+	By addcart = By.xpath("//*[@id=\"item_46402\"]/td[5]/div/button");
 	public WebElement getsharewishlist()
 	{
 		return driver.findElement(wishlist);

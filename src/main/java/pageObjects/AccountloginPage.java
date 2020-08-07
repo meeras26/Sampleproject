@@ -8,11 +8,11 @@ public class AccountloginPage
 {
 	public static WebDriver driver;
 	public AccountloginPage(WebDriver driver2) 
-		{
-				// TODO Auto-generated constructor stub
+	{
+		// TODO Auto-generated constructor stub
 		this.driver = driver2;
-		}
-	By createaccont=By.cssSelector("#login-form > div > div.col-1.new-users > div.buttons-set > a");
+	}
+	By createaccont = By.cssSelector("#login-form > div > div.col-1.new-users > div.buttons-set > a");
 	public WebElement getcreateaccnt()
 	{
 		return driver.findElement(createaccont);
