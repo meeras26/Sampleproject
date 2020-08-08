@@ -8,8 +8,8 @@ public class CreateAccountpage {
 	public static WebDriver driver;
 	public CreateAccountpage(WebDriver driver2) 
 	{
-			// TODO Auto-generated constructor stub
-	this.driver = driver2;
+		// TODO Auto-generated constructor stub
+		this.driver = driver2;
 	}
 	
 	By firstname = By.id("firstname");
@@ -67,5 +67,4 @@ public class CreateAccountpage {
     {
     	return driver.findElement(errormsg);
     }
-
 }
